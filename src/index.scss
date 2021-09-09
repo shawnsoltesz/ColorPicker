@@ -1,24 +1,31 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css';
+
 :root {
   font: 16px / 1 sans-serif;
 }
 
 html {
-  height: 100%;
+  height: auto;
+  width: auto;
 }
 
-body {
+main {
   margin: 3rem;
   min-height: 100%;
 }
+
 section {
   display: flex;
   flex-direction: column;
   margin-left: 25%;
   margin-right: 25%;
 }
-i {
-  background-color: rgb(169, 15, 15);
-  color: purple;
-  size: 50rem;
-  padding: 3rem;
+
+figure {
+  background-color: rgb(164, 80, 80);
+  size: 5rem;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  width: max-content;
 }
