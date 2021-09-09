@@ -3,15 +3,11 @@ import React from 'react'
 export function App() {
   return (
     <main>
-      <section className="title">
-        <h1>Color Picker</h1>
-      </section>
-
-      <section className="Selector">
-        <figure>
-          <i className="fas fa-lightbulb"></i>
-        </figure>
-
+      <h1>Color Picker</h1>
+      <figure>
+        <i className="fas fa-sun"></i>
+      </figure>
+      <section className="selector">
         <p>Hue</p>
         <input className="hue" type="range" min="0" max="360" value="180" />
         <p>Saturation</p>

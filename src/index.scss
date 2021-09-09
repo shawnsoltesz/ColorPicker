@@ -1,31 +1,42 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
   font: 16px / 1 sans-serif;
 }
 
 html {
-  height: auto;
-  width: auto;
+  height: 100%;
+}
+
+h1 {
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
 }
 
 main {
-  margin: 3rem;
-  min-height: 100%;
-}
-
-section {
+  min-height: 100vh;
+  background-color: rgb(230, 230, 228);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 figure {
-  background-color: rgb(164, 80, 80);
-  size: 5rem;
-  padding: 5rem;
+  color: rgb(50, 210, 210);
   display: flex;
   justify-content: center;
-  width: max-content;
+  font-size: 300px;
+}
+
+.hue,
+.saturation,
+.light {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction: column;
+  width: auto;
 }
