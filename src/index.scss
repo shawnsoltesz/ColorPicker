@@ -43,9 +43,21 @@ figure {
   grid-area: 1/1;
 }
 
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: black;
+  border-width: 4px;
+  padding-bottom: 2rem;
+}
+
 .selector {
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  flex-direction: direction;
+  justify-content: center;
   align-items: center;
 }
 
