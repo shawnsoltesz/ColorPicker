@@ -21,7 +21,9 @@ export function App() {
       <h3>HSL Color Simulator</h3>
 
       <figure>
-        <i className="fas fa-sun"></i>
+        <i className="fas fa-sun fa-7x"></i>
+        <i className="fas fa-sun fa-10x"></i>
+        <i className="fas fa-sun fa-9x"></i>
       </figure>
       <section className="instructions">
         <p>Slide the controls left and right to simulate HSL color codes</p>
