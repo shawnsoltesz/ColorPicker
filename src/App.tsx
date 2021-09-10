@@ -30,13 +30,17 @@ export function App() {
       </figure>
       <section className="instructions">
         <p>Slide the controls left and right to simulate HSL color codes</p>
-
+        <span>
+          <strong>
+            hsl: ({hue}, {saturation}%, {light}%)
+          </strong>
+        </span>
         <section className="selector">
           <p>Hue</p>
-          <span>{hue}</span>
+          {/* <span>{hue}</span> */}
           <input className="hue" type="range" min="0" max="360" value={hue} onChange={handleChangeHue} />
           <p>Saturation</p>
-          <span>{saturation}</span>
+          {/* <span>{saturation}%</span> */}
           <input
             className="saturation"
             type="range"
@@ -46,7 +50,7 @@ export function App() {
             onChange={handleChangeSaturation}
           />
           <p>Light</p>
-          <span>{light}</span>
+          {/* <span>{light}%</span> */}
           <input className="light" type="range" min="0%" max="100%" value={light} onChange={handleChangeLight} />
         </section>
       </section>

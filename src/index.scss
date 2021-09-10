@@ -38,7 +38,6 @@ main {
 }
 
 figure {
-  color: rgb(210, 50, 205);
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -54,7 +53,7 @@ figure {
 .instructions {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   border: black;
   border-width: 4px;
