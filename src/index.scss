@@ -20,14 +20,14 @@ main {
   // background-color: rgb(248, 248, 193);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-  // background: rgb(131, 58, 180);
-  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(58, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(58, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(235, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 65, 253, 1) 50%, rgba(252, 176, 69, 1) 100%);
-  background: rgb(131, 58, 180);
-  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 50, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  // background: rgb(131, 58, 180);
+  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 50, 1) 50%, rgba(252, 176, 69, 1) 100%);
   opacity: 75%;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ main {
 }
 
 figure {
-  color: rgb(210, 194, 50);
+  color: rgb(210, 50, 205);
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -64,7 +64,8 @@ figure {
 .selector {
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  flex-direction: direction;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

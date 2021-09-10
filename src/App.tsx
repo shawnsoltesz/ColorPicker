@@ -15,12 +15,15 @@ export function App() {
   function handleChangeLight(event: React.ChangeEvent<HTMLInputElement>) {
     setLight(Number(event.target.value))
   }
+
+  const newColor = `hsl(${hue},${saturation}%,${light}%)`
+  const newStyle = { color: newColor }
   return (
     <main>
       <h1>Color Picker</h1>
       <h3>HSL Color Simulator</h3>
 
-      <figure>
+      <figure style={newStyle}>
         <i className="fas fa-sun fa-7x"></i>
         <i className="fas fa-sun fa-10x"></i>
         <i className="fas fa-sun fa-9x"></i>
