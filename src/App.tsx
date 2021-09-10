@@ -20,13 +20,13 @@ export function App() {
   const newStyle = { color: newColor }
   return (
     <main>
-      <h1>Color Picker</h1>
+      <h1 style={newStyle}>Color Picker</h1>
       <h3>HSL Color Simulator</h3>
 
       <figure style={newStyle}>
-        <i className="fas fa-sun fa-7x"></i>
-        {/* <i className="fas fa-sun fa-10x"></i> */}
-        {/* <i className="fas fa-sun fa-9x"></i> */}
+        {/* <i className="fas fa-sun fa-7x"></i>
+        <i className="fas fa-sun fa-10x"></i>*/}
+        <i className="fas fa-sun fa-9x"></i>
       </figure>
       <section className="instructions">
         <p className="display">
@@ -34,7 +34,7 @@ export function App() {
             hsl: ({hue}, {saturation}%, {light}%)
           </strong>
         </p>
-        <p>Slide the controls left and right to simulate the color</p>
+        <p>Slide the controls left and right to change the color</p>
         <section className="selector">
           <p>Hue: {hue}</p>
           <input className="hue" type="range" min="0" max="360" value={hue} onChange={handleChangeHue} />
