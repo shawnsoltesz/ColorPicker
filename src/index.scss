@@ -12,12 +12,23 @@ html {
 h1 {
   justify-content: center;
   font-family: 'Permanent Marker', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 main {
   min-height: 100vh;
-  background-color: rgb(230, 230, 228);
+  // background-color: rgb(248, 248, 193);
+  // background: rgb(131, 58, 180);
+  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  // background: rgb(131, 58, 180);
+  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(58, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  // background: rgb(131, 58, 180);
+  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(235, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  // background: rgb(131, 58, 180);
+  // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 65, 253, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 50, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  opacity: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,10 +36,21 @@ main {
 }
 
 figure {
-  color: rgb(50, 210, 210);
-  display: flex;
+  color: rgb(210, 194, 50);
+  display: grid;
   justify-content: center;
   font-size: 300px;
+  grid-area: 1/1;
+}
+
+.selector {
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+}
+
+input {
+  width: 100%;
 }
 
 .hue,
@@ -39,4 +61,5 @@ figure {
   cursor: pointer;
   flex-direction: column;
   width: auto;
+  font-size: 1rem;
 }
