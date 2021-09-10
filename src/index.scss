@@ -10,13 +10,17 @@ html {
 }
 
 h1 {
+  display: flex;
   justify-content: center;
   font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
+  font-size: 20px;
+  align-content: flex-start;
 }
 
 main {
-  min-height: 100vh;
+  font-size: 9px;
+  max-width: fit-content;
+  max-height: fit-content;
   // background-color: rgb(248, 248, 193);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
@@ -30,11 +34,10 @@ main {
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 50, 1) 50%, rgba(252, 176, 69, 1) 100%);
   opacity: 75%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 figure {
@@ -61,7 +64,7 @@ figure {
 }
 
 .selector {
-  font-size: 15px;
+  font-size: 8px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -82,4 +85,10 @@ input {
   flex-direction: column;
   width: auto;
   font-size: 1rem;
+}
+
+.display {
+  border-color: chocolate;
+  border-width: 5px;
+  padding: 0.5rem;
 }

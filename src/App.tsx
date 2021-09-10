@@ -25,22 +25,20 @@ export function App() {
 
       <figure style={newStyle}>
         <i className="fas fa-sun fa-7x"></i>
-        <i className="fas fa-sun fa-10x"></i>
-        <i className="fas fa-sun fa-9x"></i>
+        {/* <i className="fas fa-sun fa-10x"></i> */}
+        {/* <i className="fas fa-sun fa-9x"></i> */}
       </figure>
       <section className="instructions">
-        <p>Slide the controls left and right to simulate HSL color codes</p>
-        <span>
+        <p className="display">
           <strong>
             hsl: ({hue}, {saturation}%, {light}%)
           </strong>
-        </span>
+        </p>
+        <p>Slide the controls left and right to simulate the color</p>
         <section className="selector">
-          <p>Hue</p>
-          {/* <span>{hue}</span> */}
+          <p>Hue: {hue}</p>
           <input className="hue" type="range" min="0" max="360" value={hue} onChange={handleChangeHue} />
-          <p>Saturation</p>
-          {/* <span>{saturation}%</span> */}
+          <p>Saturation: {saturation}%</p>
           <input
             className="saturation"
             type="range"
@@ -49,8 +47,7 @@ export function App() {
             value={saturation}
             onChange={handleChangeSaturation}
           />
-          <p>Light</p>
-          {/* <span>{light}%</span> */}
+          <p>Light: {light}%</p>
           <input className="light" type="range" min="0%" max="100%" value={light} onChange={handleChangeLight} />
         </section>
       </section>
