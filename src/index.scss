@@ -10,18 +10,22 @@ html {
 }
 
 h1 {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-family: 'Permanent Marker', cursive;
-  font-size: 20px;
+  font-size: 40px;
   align-content: flex-start;
 }
-
+h3 {
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+}
 main {
-  font-size: 9px;
+  font-size: 11px;
   max-width: fit-content;
   max-height: fit-content;
-  // background-color: rgb(248, 248, 193);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   background: rgb(131, 58, 180);
@@ -32,20 +36,28 @@ main {
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 65, 253, 1) 50%, rgba(252, 176, 69, 1) 100%);
   // background: rgb(131, 58, 180);
   // background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 50, 1) 50%, rgba(252, 176, 69, 1) 100%);
-  opacity: 75%;
-  display: flex;
+  opacity: 60%;
+  // display: flex;
   align-items: center;
-  flex-direction: column;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  // flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 figure {
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
-  grid-area: 1/1;
-  //background-color: white;
+  max-width: fit-content;
+}
+
+figure .first {
+  padding-left: 15px;
+}
+
+figure .third {
+  padding-right: 15px;
 }
 
 .fas {
@@ -53,18 +65,18 @@ figure {
   padding-right: 2rem;
 }
 
-.instructions {
+.instructions,
+.display {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: black;
-  border-width: 4px;
   padding-bottom: 2rem;
+  font-size: 20px;
 }
 
 .selector {
-  font-size: 8px;
+  font-size: 16px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -87,8 +99,7 @@ input {
   font-size: 1rem;
 }
 
-.display {
-  border-color: chocolate;
-  border-width: 5px;
-  padding: 0.5rem;
+footer {
+  display: flex;
+  justify-content: center;
 }

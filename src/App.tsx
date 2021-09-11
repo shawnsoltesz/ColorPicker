@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 export function App() {
-  const [hue, setHue] = useState(180)
-  const [saturation, setSaturation] = useState(75)
-  const [light, setLight] = useState(25)
+  const [hue, setHue] = useState(0)
+  const [saturation, setSaturation] = useState(100)
+  const [light, setLight] = useState(50)
 
   function handleChangeHue(event: React.ChangeEvent<HTMLInputElement>) {
     setHue(Number(event.target.value))
@@ -21,24 +21,31 @@ export function App() {
   return (
     <main>
       <h1 style={newStyle}>Color Picker</h1>
-      <h3>HSL Color Simulator</h3>
+      <p className="display">
+        <strong>
+          hsl value: ({hue}, {saturation}%, {light}%)
+        </strong>
+      </p>
 
       <figure style={newStyle}>
-        {/* <i className="fas fa-sun fa-7x"></i>
-        <i className="fas fa-sun fa-10x"></i>*/}
-        <i className="fas fa-sun fa-9x"></i>
+        <i className="first fas fa-sun fa-7x"></i>
+        <i className="second fas fa-sun fa-10x"></i>
+        <i className="third fas fa-sun fa-9x"></i>
       </figure>
       <section className="instructions">
-        <p className="display">
-          <strong>
-            hsl: ({hue}, {saturation}%, {light}%)
-          </strong>
+        <p>
+          <strong>Instructions: </strong>
+          Slide the controls left and right to adjust the color. Have fun!
         </p>
-        <p>Slide the controls left and right to change the color</p>
+
         <section className="selector">
-          <p>Hue: {hue}</p>
+          <p>
+            <strong>Hue: {hue}</strong>
+          </p>
           <input className="hue" type="range" min="0" max="360" value={hue} onChange={handleChangeHue} />
-          <p>Saturation: {saturation}%</p>
+          <p>
+            <strong>Saturation: {saturation}%</strong>
+          </p>
           <input
             className="saturation"
             type="range"
@@ -47,11 +54,15 @@ export function App() {
             value={saturation}
             onChange={handleChangeSaturation}
           />
-          <p>Light: {light}%</p>
+          <p>
+            <strong>Light: {light}%</strong>
+          </p>
           <input className="light" type="range" min="0%" max="100%" value={light} onChange={handleChangeLight} />
         </section>
       </section>
-      <footer></footer>
+      <footer>
+        <p>Built with ♥ in St. Petersburg, Florida.</p>
+      </footer>
     </main>
   )
 }
