@@ -18,6 +18,21 @@ export function App() {
 
   const newColor = `hsl(${hue},${saturation}%,${light}%)`
   const newStyle = { color: newColor }
+
+  //Randomizer
+
+  // const randomHue = Math.floor(Math.random() * (360 - 0 + 1)) + 0
+
+  // console.log(randomHue)
+
+  // const randomSaturation = Math.floor(Math.random() * (100 - 0 + 1)) + 0
+
+  // console.log(randomSaturation)
+
+  // const randomLight = Math.floor(Math.random() * (100 - 0 + 1)) + 0
+
+  // console.log(randomLight)
+
   return (
     <main>
       <h1 style={newStyle}>Color Picker</h1>
@@ -38,6 +53,8 @@ export function App() {
           Slide the controls left and right to adjust the color. Have fun!
         </p>
 
+        <button>Random Color</button>
+
         <section className="selector">
           <p>
             <strong>Hue: {hue}</strong>
@@ -55,7 +72,7 @@ export function App() {
             onChange={handleChangeSaturation}
           />
           <p>
-            <strong>Light: {light}%</strong>
+            <strong>Lightness: {light}%</strong>
           </p>
           <input className="light" type="range" min="0%" max="100%" value={light} onChange={handleChangeLight} />
         </section>
