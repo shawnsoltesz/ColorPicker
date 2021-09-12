@@ -15,15 +15,18 @@ export function App() {
   function handleChangeLight(event: React.ChangeEvent<HTMLInputElement>) {
     setLight(Number(event.target.value))
   }
+}
+const newColor = `hsl(${hue},${saturation}%,${light}%)`
+const newStyle = { color: newColor }
 
-  const newColor = `hsl(${hue},${saturation}%,${light}%)`
-  const newStyle = { color: newColor }
+//Randomizer
 
-  //Randomizer
+const randomHue = Math.floor(Math.random() * (360 - 0 + 1)) + 0
 
-  // const randomHue = Math.floor(Math.random() * (360 - 0 + 1)) + 0
+setHue = randomHue
 
-  // console.log(randomHue)
+function handleChangeRandomize(event: React.ChangeEvent<HTMLInputElement>) {
+  randomHue(Number(event.target.value))
 
   // const randomSaturation = Math.floor(Math.random() * (100 - 0 + 1)) + 0
 
