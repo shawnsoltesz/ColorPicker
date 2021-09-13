@@ -15,26 +15,17 @@ export function App() {
   function handleChangeLight(event: React.ChangeEvent<HTMLInputElement>) {
     setLight(Number(event.target.value))
   }
-}
-const newColor = `hsl(${hue},${saturation}%,${light}%)`
-const newStyle = { color: newColor }
 
-//Randomizer
+  const newColor = `hsl(${hue},${saturation}%,${light}%)`
+  const newStyle = { color: newColor }
 
-const randomHue = Math.floor(Math.random() * (360 - 0 + 1)) + 0
+  //Randomizer
 
-setHue = randomHue
-
-function handleChangeRandomize(event: React.ChangeEvent<HTMLInputElement>) {
-  randomHue(Number(event.target.value))
-
-  // const randomSaturation = Math.floor(Math.random() * (100 - 0 + 1)) + 0
-
-  // console.log(randomSaturation)
-
-  // const randomLight = Math.floor(Math.random() * (100 - 0 + 1)) + 0
-
-  // console.log(randomLight)
+  function handleRandomButtonClick() {
+    setHue(Math.floor(Math.random() * 361))
+    setSaturation(Math.floor(Math.random() * 101))
+    setLight(Math.floor(Math.random() * 101))
+  }
 
   return (
     <main>
@@ -56,7 +47,7 @@ function handleChangeRandomize(event: React.ChangeEvent<HTMLInputElement>) {
           Slide the controls left and right to adjust the color. Have fun!
         </p>
 
-        <button>Random Color</button>
+        <button onClick={handleRandomButtonClick}>Random Color</button>
 
         <section className="selector">
           <p>
