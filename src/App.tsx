@@ -72,7 +72,9 @@ export function App() {
         </section>
       </section>
       <footer>
-        <p>Built with ♥ in St. Petersburg, Florida.</p>
+        <p>
+          Built with <i style={newStyle} className="fas fa-heart"></i> in St. Petersburg, Florida.
+        </p>
       </footer>
     </main>
   )
