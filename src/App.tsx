@@ -47,7 +47,7 @@ export function App() {
           Slide the controls left and right to adjust the color. Have fun!
         </p>
 
-        <button onClick={handleRandomButtonClick}>Random Color</button>
+        <button onClick={handleRandomButtonClick}>Generate a Random Color</button>
 
         <section className="selector">
           <p>
